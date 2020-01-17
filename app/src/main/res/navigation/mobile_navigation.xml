@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_daily_challenge"
+        android:name="com.example.environmentchallenge.ui.daily_challenge.DailyChallengeFragment"
+        android:label="@string/menu_daily_challenge"
+        tools:layout="@layout/fragment_daily_challenge">
+        <action
+            android:id="@+id/action_nav_daily_challenge_to_nav_weekly_challenge"
+            app:destination="@id/nav_weekly_challenge"
+            app:popUpTo="@+id/nav_daily_challenge"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_daily_challenge_to_nav_profile"
+            app:destination="@id/nav_profile"
+            app:popUpTo="@+id/nav_daily_challenge"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_daily_challenge_to_nav_ranking"
+            app:destination="@id/nav_ranking"
+            app:popUpTo="@+id/nav_daily_challenge"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_daily_challenge_to_nav_about_us"
+            app:destination="@id/nav_about_us"
+            app:popUpTo="@+id/nav_daily_challenge"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_daily_challenge_to_nav_logout"
+            app:destination="@id/nav_logout"
+            app:popUpTo="@+id/nav_daily_challenge"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_weekly_challenge"
+        android:name="com.example.environmentchallenge.ui.weekly_challenge.WeeklyChallengeFragment"
+        android:label="@string/menu_weekly_challenge"
+        tools:layout="@layout/fragment_weekly_challenge" />
+    <fragment
+        android:id="@+id/nav_ranking"
+        android:name="com.example.environmentchallenge.ui.ranking.RankingFragment"
+        android:label="@string/menu_ranking"
+        tools:layout="@layout/fragment_ranking" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.environmentchallenge.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.example.environmentchallenge.ui.about_us.AboutUsFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.environmentchallenge.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_nav_daily_challenge"
+            app:destination="@id/nav_daily_challenge" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.environmentchallenge.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+
+</navigation>

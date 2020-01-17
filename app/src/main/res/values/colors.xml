@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="MyTextColor">#1D8321</color>
+    <color name="LabelColor">#FFE9E9</color>
+    <color name="ProgressBarColor">#008EFD</color>
+    <color name="ProgressBarBackgroundColor">#71C3F7</color>
+    <color name="TextColor">#209126</color>
+</resources>

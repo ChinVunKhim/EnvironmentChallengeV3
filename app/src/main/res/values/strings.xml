@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Environment Challenge</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_name">[NAME]</string>
+    <string name="nav_header_points">[POINTS/LEVEL]</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_daily_challenge">Daily Challenge</string>
+    <string name="menu_weekly_challenge">Weekly Challenge</string>
+    <string name="menu_ranking">Ranking</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_about_us">About Us</string>
+
+    <string name="facebook_app_id" translatable="false">1518085675022905</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1518085675022905</string>
+</resources>

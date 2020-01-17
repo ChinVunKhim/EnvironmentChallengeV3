@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <Button
+        android:id="@+id/done_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="28dp"
+        android:text="done"
+        android:textColor="@color/TextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weekly_task_text3" />
+
+    <TextView
+        android:id="@+id/weekly_task_text3"
+        android:layout_width="310dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:background="?attr/colorButtonNormal"
+        android:fontFamily="casual"
+        android:text="Daily Task"
+        android:textAlignment="center"
+        android:textColor="@color/TextColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="191dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="107dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/text_daily_challenge"
+        android:layout_width="310sp"
+        android:layout_height="230sp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@color/TextColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weekly_task_text3"
+        app:layout_constraintEnd_toEndOf="@+id/weekly_task_text3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/weekly_task_text3"
+        app:layout_constraintTop_toTopOf="@+id/weekly_task_text3"
+        app:layout_constraintVertical_bias="0.71" />
+</androidx.constraintlayout.widget.ConstraintLayout>

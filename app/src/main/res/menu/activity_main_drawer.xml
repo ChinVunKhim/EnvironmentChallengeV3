@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_menu_logout"
+        android:title="@string/menu_logout"/>
+
+    <item android:title="Challenge">
+        <menu>
+            <item
+                android:id="@+id/nav_daily_challenge"
+                android:icon="@drawable/ic_menu_daily_challenge"
+                android:title="@string/menu_daily_challenge"/>
+            <item
+                android:id="@+id/nav_weekly_challenge"
+                android:icon="@drawable/ic_menu_weekly_challenge"
+                android:title="@string/menu_weekly_challenge"/>
+        </menu>
+    </item>
+
+    <item android:title="Info">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_menu_profile"
+                android:title="@string/menu_profile"/>
+            <item
+                android:id="@+id/nav_ranking"
+                android:icon="@drawable/ic_menu_ranking"
+                android:title="@string/menu_ranking"/>
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_menu_about_us"
+                android:title="@string/menu_about_us"/>
+        </menu>
+    </item>
+
+</menu>
